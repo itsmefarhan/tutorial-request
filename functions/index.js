@@ -32,7 +32,7 @@ exports.upvote = functions.https.onCall((data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       "unauthenticated",
-      "You must be logged in to add a request"
+      "You must be logged in to upvote"
     );
   }
   // get collection ref
