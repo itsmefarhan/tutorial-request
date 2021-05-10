@@ -7,6 +7,7 @@ import Heading from "../components/Heading";
 import Main from "../components/Main";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { NextSeo } from "next-seo";
 
 const Login = () => {
   const router = useRouter();
@@ -33,6 +34,10 @@ const Login = () => {
 
   return (
     <Main>
+      <NextSeo
+        title="Tutorial Requests - Login"
+        description="Login into your account to request or upvote tutorial"
+      />
       <ToastContainer position="top-center" />
       <Heading label="Log Into Your Account" />
       <form onSubmit={handleSubmit}>

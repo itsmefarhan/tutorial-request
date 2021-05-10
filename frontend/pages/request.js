@@ -27,6 +27,10 @@ const Request = () => {
 
   return (
     <Main>
+      <NextSeo
+        title="Tutorial Requests - Add Request"
+        description="Add a tutorial request"
+      />
       <ToastContainer position="top-center" />
       <Heading label="Request A Tutorial" />
       <form onSubmit={handleSubmit}>

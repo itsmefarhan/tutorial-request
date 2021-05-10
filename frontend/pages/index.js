@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import firebase from "../firebase";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   const [requests, setRequests] = useState([]);
@@ -32,6 +33,7 @@ export default function Home() {
 
   return (
     <div>
+      <NextSeo title="Tutorial Requests" description="Request a tutorial" />
       <ToastContainer position="top-center" />
       {requests.map((request) => (
         <div
